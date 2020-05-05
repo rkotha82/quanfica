@@ -28,13 +28,38 @@ Lastly, run below command to install win32 API
 
 > conda install -c anaconda pywin32
 
-This will complete the installation of zipline locally and you would see the new kernel created in your jupyter notebook
+This will complete the installation of Zipline locally and you would see the new kernel created in your jupyter notebook
 
+Installing Pyfolio
 
+Following are the steps to install popular Quantopian's packages Pyfolio with Anaconda
 
+Note: Do not miss out on any of the following steps, missing commands may cause the installation to fail.
 
+Pyfolio:
 
+Step1: Create a new anaconda environment from the directory where you will be working i.e. from your anaconda base directory
 
+> conda create -n pyfolio_env python=3.5
 
+Step2: Activate the new environment
 
- 
+> conda activate pyfolio_env
+
+This will change to the new environment, then install pyfolio from quantopian
+
+> conda install -c quantopian pyfolio
+
+pyfolio gets installed successfully, now install ipykernel 
+
+> conda install -c anaconda ipykernel
+
+Install the new environment in jupyter notebook
+
+> python -m ipykernel install --user --name=pyfolio_env
+
+Lastly, run below command to install win32 API 
+
+> conda install -c anaconda pywin32
+
+This will complete the installation of Pyfolio locally and you would see the new kernel created in your jupyter notebook
