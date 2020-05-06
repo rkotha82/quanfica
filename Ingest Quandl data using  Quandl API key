@@ -1,0 +1,21 @@
+Note: Following steps were completed with Anaconda and ingesting quandl data helps you work with zipline algorithms 
+
+Step1: Install quandl package using below command
+
+> conda install -c anaconda quandl or conda install quandl
+
+Now you can import quandl successfully, as below:
+
+> import quandl
+
+Step2: Assign quandl API key, to get an API key you need to sign up for a free quandl account
+
+> quandl.ApiConfig.api_key = 'qN6gQSWBdLeW27Ks6bhK'
+
+Please note that the key value was changed for the purpose of this demonstration
+
+Ingest the default quandl bundle in anaconda command prompt, activate and change to the environment you had created for zipline
+
+> zipline ingest -b quandl
+
+This will download WIKI metadata, WIKI prices table from quandl. This also merges daily equity files.
